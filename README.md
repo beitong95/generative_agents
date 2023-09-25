@@ -44,6 +44,8 @@ Again, the environment is implemented as a Django project, and as such, you will
 
     python manage.py runserver
 
+    python manage.py runserver 130.126.139.253:8000 (new 09252023, also need to add the ip in allowed host in settings/local
+
 Then, on your favorite browser, go to [http://localhost:8000/](http://localhost:8000/). If you see a message that says, "Your environment server is up and running," your server is running properly. Ensure that the environment server continues to run while you are running the simulation, so keep this command-line tab open! (Note: I recommend using either Chrome or Safari. Firefox might produce some frontend glitches, although it should not interfere with the actual simulation.)
 
 ### Step 2. Starting the Simulation Server
@@ -63,7 +65,6 @@ On your browser, navigate to [http://localhost:8000/simulator_home](http://local
 
     run <step-count>
 Note that you will want to replace `<step-count>` above with an integer indicating the number of game steps you want to simulate. For instance, if you want to simulate 100 game steps, you should input `run 100`. One game step represents 10 seconds in the game.
-
 
 Your simulation should be running, and you will see the agents moving on the map in your browser. Once the simulation finishes running, the "Enter option" prompt will re-appear. At this point, you can simulate more steps by re-entering the run command with your desired game steps, exit the simulation without saving by typing `exit`, or save and exit by typing `fin`.
 
